@@ -1,8 +1,12 @@
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+
 function App() {
   return (
     <>
-    <div className="text-lg p-2 font-bold text-red-400">
-      Tasty-feast.
+    <div>
+      <Header/>
+      <Footer/>
     </div>
     </>
   );
