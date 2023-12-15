@@ -13,9 +13,7 @@
 .firebase/
 .firebaserc
 firebase.json
-public/assets/
-src/components/
-
+.gitignore
 # misc
 .DS_Store
 .env.local
