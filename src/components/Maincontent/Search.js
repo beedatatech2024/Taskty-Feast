@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import SearchButton from "./SearchButton";
 const Search = () => {
   const [searchItem,setSearchItem]=useState("")
@@ -6,7 +6,7 @@ const Search = () => {
     setSearchItem(event.target.value);
   }
   const handleSearch=()=>{
-    console.log(searchItem);
+    
   }
   return (
     <div className="flex justify-center items-center">
