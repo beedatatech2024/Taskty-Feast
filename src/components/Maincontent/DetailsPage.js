@@ -10,20 +10,24 @@ const DetailsPage = () => {
   return (
     <div>
       <div className='m-10'>
-        <div className="">
+        <div className='flex'>
+        <div>
         <img src={item.recipe.image} alt="image_not_found" className='h-80 w-80 rounded-md shadow-2xl'/>
         <h1>Item Name: {item.recipe.label}</h1>
         <p>Diet:{item.recipe.dietLabels}</p>
         </div>
-        <div>
-        <h1>Ingredients Used</h1>
+        <div className="px-5">
+        <h1 className='text-xl font-bold'>Ingredients Used</h1>
         {item.recipe.ingredients.map((item, index) => (
-          <li key={index}>{item.text}:{item.quantity}</li>
+          <li key={index}>{item.text}</li>
         ))}
-        <h1>Nutritions</h1>
+        </div>
+        <div className='px-5'>
+        <h1 className='text-xl font-bold'>Nutritions</h1>
         {item.recipe.digest.map((item, index) => (
-          <li key={index}>{item.label}:{item.total}</li>
+          <li key={index}>{item.label}: {item.total}</li>
         ))}
+        </div>
         </div>
         </div>
     </div>
