@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import SearchButton from "./SearchButton";
 const Search = () => {
   const [searchItem,setSearchItem]=useState("")
