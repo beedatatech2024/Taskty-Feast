@@ -2,21 +2,24 @@ import React, { useEffect, useState } from 'react'
 import Search from './Search'
 import { Link } from 'react-router-dom'
 
-
 const Mainpage = () => {
   const [data,setData]=useState([])
+  const [searchTerm, setSearchItem]=useState("")
     useEffect(() => {
       const fetchData = async () => {
-        const response=await fetch('https://api.edamam.com/search?app_id=900da95e&app_key=40698503668e0bb3897581f4766d77f9&q=biryani');
+        const response=await fetch(`https://api.edamam.com/search?app_id=900da95e&app_key=40698503668e0bb3897581f4766d77f9&q=${searchTerm}`);
         const result = await response.json();
         setData(result.hits)
         console.log(result.hits);
       };
       fetchData();
-    }, []);
+    }, [searchTerm]);
+    const handleSearch=(newSearchTerm)=>{
+      setSearchItem(newSearchTerm);
+    };
   return (
     <div className='m-5 mb-6'>
-        <Search/>
+        <Search onSearch={handleSearch}/>
         <div className='flex flex-wrap text-center cursor-pointer'>
         {
           data.map((item)=>(
