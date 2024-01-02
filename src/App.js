@@ -4,7 +4,6 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import DetailsPage from "./components/Maincontent/DetailsPage";
 import Mainpage from "./components/Maincontent/Mainpage";
-
 function App() {
   return (
     <>

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Mainpage = () => {
   const [data,setData]=useState([])
-  const [searchTerm, setSearchItem]=useState("")
+  const [searchTerm, setSearchItem]=useState("biryani")
     useEffect(() => {
       const fetchData = async () => {
         const response=await fetch(`https://api.edamam.com/search?app_id=900da95e&app_key=40698503668e0bb3897581f4766d77f9&q=${searchTerm}`);
@@ -22,8 +22,8 @@ const Mainpage = () => {
         <Search onSearch={handleSearch}/>
         <div className='flex flex-wrap text-center cursor-pointer'>
         {
-          data.map((item)=>(
-            <Link  to={`/details/${item.recipe.label}`}state={{item}} key={item.recipe.label}>
+          data.map((item,index)=>(
+            <Link  to={`/details/${item.recipe.label}`}state={{item}} key={index}>
             <div className='p-3 h-[9] w-72'>
             <img src={item.recipe.image} alt="not found" className="shadow-lg rounded-lg border bg-gray-50"/>
             <h1 className='font-bold text-lg'>{item.recipe.label}</h1>
