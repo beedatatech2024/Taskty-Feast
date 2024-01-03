@@ -4,7 +4,7 @@ import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg
 
 const Footer = () => {
   return (
-    <footer className='bg-slate-200 text-center shadow-md'>
+    <footer className='bg-slate-200 text-center shadow-md mt-5'>
       <div>
         <h1 className='font-bold'>Follow Us</h1>
         <div className='flex justify-center mt-4'>
@@ -23,5 +23,4 @@ const Footer = () => {
     </footer>
   );
 }
-
 export default Footer;
