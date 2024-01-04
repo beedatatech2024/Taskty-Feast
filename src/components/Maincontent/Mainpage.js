@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Search from './Search';
 import { Link } from 'react-router-dom';
-
+import Shimmer from './Shimmer';
 const Mainpage = () => {
   const [data, setData] = useState([]);
   const [searchTerm, setSearchItem] = useState("biryani");
@@ -32,7 +32,7 @@ const Mainpage = () => {
     <div className='m-5 mb-6'>
       <Search onSearch={handleSearch} />
       {loading ? (
-        <p className='text-center font-bold text-3xl'>Loading...</p>
+        <Shimmer/>
       ) : (
         data.length > 0 ? (
           <div className='flex flex-wrap text-center cursor-pointer'>
