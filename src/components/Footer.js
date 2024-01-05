@@ -19,7 +19,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <p className='mt-4'>&copy; 2023 BeeData</p>
+      <p className='m-2'>&copy; 2023 BeeData</p>
     </footer>
   );
 }

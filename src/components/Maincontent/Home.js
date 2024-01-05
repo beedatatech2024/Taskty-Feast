@@ -4,88 +4,80 @@ import Carousel from "react-bootstrap/Carousel";
 const Home = () => {
   return (
     <>
-      <div className="border-spacing-2 m-2">
-        <Carousel data-bs-theme="dark">
-          <Carousel.Item>
-            <img
-              style={{ height: "400px" }}
-              className="d-block w-100 "
-              src="assets\slide-1.jpg"
-              alt="First slide"
-            />
-            <Carousel.Caption></Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              style={{ height: "400px" }}
-              className="d-block w-100"
-              src="assets/slide-2.jpg"
-              alt="Second slide"
-            />
-            <Carousel.Caption></Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              style={{ height: "400px" }}
-              className="d-block w-100"
-              src="assets\slide-3.jpg"
-              alt="Third slide"
-            />
-          </Carousel.Item>
-        </Carousel>
-      </div>
+      <div class="rounded-lg overflow-hidden">
+  <Carousel data-bs-theme="none">
+    <Carousel.Item>
+      <img
+        class="h-96 w-full p-3 object-cover shadow-sky-400 rounded-lg opacity-80"
+        src="https://img.freepik.com/free-photo/fresh-gourmet-meal-beef-taco-salad-plate-generated-by-ai_188544-13382.jpg?w=1380&t=st=1704486684~exp=1704487284~hmac=bc1e436c0859c32757ce71eb117937c3c9433b249fc3d7333936f4ab37dd5226"
+        alt="First slide"
+      />
+      <Carousel.Caption></Carousel.Caption>
+    </Carousel.Item>
+    <Carousel.Item>
+      <img
+        class="h-96 w-full object-cover p-3 shadow-2xl rounded-lg opacity-70"
+        src="https://www.modular.it/Modular/image-thumb__18135__home-carousel/Home%20Slider_4.jpg"
+        alt="Second slide"
+      />
+      <Carousel.Caption></Carousel.Caption>
+    </Carousel.Item>
+    <Carousel.Item>
+      <img
+        class="h-96 w-full p-3 object-cover shadow-2xl rounded-lg opacity-80"
+        src="https://www.seasonssurrey.co.uk/images/kitchen-carousel-3.jpg"
+        alt="Third slide"
+      />
+    </Carousel.Item>
+  </Carousel>
+</div>
       <div className="mt-8">
-        <h1 className="text-3xl font-bold text-center mb-6">OUR SPECIALS</h1>
+        <h1 className="text-3xl font-bold text-center mb-6">Our Specials</h1>
         <div className="flex justify-center gap-36">
-          <div className="bg-blue-400 rounded-md p-6 h-[] w-1/4">
-            <h1 className="text-2xl font-bold text-black mb-4 text-center">
+          <div className="bg-blue-400 rounded-md p-6 pt-2 w-1/4">
+            <h1 className="text-xl font-bold text-black p-2 text-center">
               All Food Items
             </h1>
             <img
               alt=" "
-              className="w-72 h-48 mx-auto object-cover rounded-md mb-4 "
+              className="w-80 h-48 mx-auto object-cover rounded-md mb-4"
               src="assets/Search.jpg"
             />
-            <p className="text-black text-justify font-semibold text-xl">
-            Welcome to our culinary haven! At Tasty Feast, we're on a mission to make your kitchen adventures extraordinary. Explore diverse recipes, compile shopping lists seamlessly, and delve into detailed ingredient insights—all in one place.  and let your culinary journey begin!
+            <p className="text-justify text-black font-serif">
+            Welcome to Tasty Feast, your ultimate culinary have Embark on extraordinary kitchen adventures as we guide you through a world of diverse recipes, seamlessly compile shopping lists, and provide in-depth ingredient insights—all conveniently in one place. Get ready to elevate your culinary journey with us, where flavors meet innovation, and every dish tells a unique story. Let the exploration of tastes and textures begin—your kitchen's next masterpiece awaits!
             </p>
           </div>
-          <div className="bg-blue-400 rounded-md p-6 h-[] w-1/4">
-            <h1 className="font-bold text-black mb-4 text-center text-2xl">
+          <div className="bg-blue-400 rounded-md p-6 pt-2 w-1/4">
+            <h1 className="text-xl font-bold text-black p-2 text-center">
               Nutrition
             </h1>
             <img
               alt=" "
-              className="w-72 h-48 mx-auto object-cover rounded-md mb-4 "
+              className="w-80 h-48 mx-auto object-cover rounded-md mb-4"
               src="assets/nut.jpg"
             />
-            <p className="text-black text-justify font-semibold text-xl">
-            Unlock a healthier you with our Nutrition Search website. Explore detailed nutritional information for a variety of foods, make informed choices, and achieve your wellness goals effortlessly. Welcome to a world where good nutrition is just a click away!
+            <p className="text-justify font-serif">
+            Welcome to our Nutrition Search website, your gateway to unlocking a healthier you! Dive into detailed nutritional information for a wide range of foods, empowering you to make informed and mindful choices that align with your wellness goals. Experience the ease of navigating through a world where good nutrition is at your fingertips. Explore, discover, and embark on a journey towards a better, healthier you. Let's pave the way for your well-being—one click at a time!"
             </p>
           </div>
-          <div className="bg-blue-400 rounded-md p-6 h-[] w-1/4">
-            <h1 className="text-2xl font-bold text-black mb-4 text-center">
+          <div className="bg-blue-400 rounded-md p-6 pt-2 w-1/4">
+            <h1 className="text-xl font-bold text-black p-2 text-center">
               Ingredients
             </h1>
             <img
               alt=" "
-              className="w-72 h-48 mx-auto object-cover rounded-md mb-4 "
+              className="w-80 h-48 mx-auto object-cover rounded-md mb-4"
               src="assets/ing.png"
             />
-            <p className="text-black text-justify font-semibold text-xl">
-              Explore a world of culinary delights, discover diverse
-              ingredients, and access detailed nutritional information on our
-              Search Food, Ingredients, and Nutrition website. Elevate your
-              cooking with a wealth of resources to create wholesome and
-              delicious meals. Welcome to a platform that caters to your
-              culinary curiosity and well-being.
+            <p className="text-black text-justify font-serif">
+            Explore a world of culinary delights, discover diverse ingredients, and access detailed nutritional information on our Search Food, Ingredients, and Nutrition website. Elevate your cooking with a wealth of resources to create wholesome and delicious meals. Welcome to a platform that caters to your culinary curiosity and well-being, providing you with the tools and knowledge to embark on a delightful culinary journey.
             </p>
           </div>
         </div>
       </div>
       <h1 className="text-3xl font-bold text-center m-6">How It Works?</h1>
       <div className="d-flex flex-row" style={{ justifyContent: "center" }}>
-        <div style={{ textAlign: "center", margin: "20px" }}>
+        <div>
           <div style={{ width: "330px", borderRadius: "20px" }}>
             <img
               className="w-52 h-48 mx-auto object-cover rounded-md mb-4"
@@ -109,7 +101,6 @@ const Home = () => {
             <h1
               style={{ fontSize: "20px", fontWeight: "bold", margin: "10PX" }}
             >
-              {" "}
               Get your Favorit Food with Ingredients
             </h1>
           </div>
@@ -129,87 +120,32 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <h1 className="text-3xl font-bold text-center mt-4">FROM OUR MENU</h1>
-      <div className="d-flex flex-row m-4 justify-center">
-        <div style={{ textAlign: "center" }} className="ml-10">
-          <div style={{ width: "330px", borderRadius: "20px" }}>
-            <img
-              style={{
-                borderRadius:"10px",
-                margin: "5px",
-                height: "170px",
-                width: "260px",
-              }}
-              src="assets\breakfast.webp"
-              alt=""
-            />
-            <h1
-              style={{ fontSize: "30px", fontWeight: "bold", margin: "10PX" }}
-            >
+      <h1 className="text-3xl font-bold text-center mt-4">From our menu</h1>
+      <div className="flex gap-16 px-10 justify-center items-center mt-4">
+          <div>
+            <img src="assets\breakfast.webp" alt="" className="h-60 w-72 rounded-lg shadow-lg object-cover"/>
+            <h1 className="text-center text-xl font-semibold">
               Breakfast
             </h1>
-          </div>
         </div>
-        <div style={{ textAlign: "center" }}>
-          <div style={{ width: "330px", borderRadius: "20px" }}>
-            <img
-              style={{
-                borderRadius: "10px",
-                margin: "5PX",
-                height: "170px",
-                width: "260px",
-              }}
-              src="assets\lunch.webp"
-              alt=""
-            />
-            <h1
-              style={{ fontSize: "30px", fontWeight: "bold", margin: "10PX" }}
-            >
+        <div>
+            <img src="assets\lunch.webp" alt="" className="h-60 w-72 rounded-lg shadow-lg object-cover"/>
+            <h1 className="text-center text-xl font-semibold">
               Lunch
             </h1>
-          </div>
-        </div>
-        <div style={{ textAlign: "center" }}>
-          <div style={{ width: "330px", borderRadius: "20px" }}>
-            <img
-              style={{
-                borderRadius: "10px",
-                margin: "5PX",
-                height: "170px",
-                width: "260px",
-              }}
-              src="assets\lunch.webp"
-              alt=""
-            />
-            <h1
-              style={{ fontSize: "30px", fontWeight: "bold", margin: "10PX" }}
-            >
+        </div><div>
+            <img src="assets\dinner.jpg" alt="" className="h-60 w-72 rounded-lg shadow-lg object-cover"/>
+            <h1 className="text-center text-xl font-semibold">
               Dinner
             </h1>
-          </div>
-        </div>
-        <div style={{ textAlign: "center" }}>
-          <div style={{ width: "330px", borderRadius: "20px" }}>
-            <img
-              style={{
-                borderRadius: "10px",
-                margin: "5PX",
-                height: "170px",
-                width: "260px",
-              }}
-              src="assets\snacks.jpg"
-              alt=""
-            />
-            <h1
-              style={{ fontSize: "30px", fontWeight: "bold", margin: "10PX" }}
-            >
+        </div><div>
+            <img src="assets\snacks.jpg" alt="" className="h-60 w-72 rounded-lg shadow-lg object-cover"/>
+            <h1 className="text-center text-xl font-semibold">
               Snacks
             </h1>
-          </div>
         </div>
       </div>
-
-      <h1 className="text-3xl font-bold text-center mb-6">ABOUT US</h1>
+      <h1 className="text-3xl font-bold text-center mb-6">About Us</h1>
       <div
         className="d-flex flex-row shadow-lg rounded-lg m-2 justify-center bg-blue-300"
         // style={{ backgroundColor: " #cc99ff", justifyContent: "center" }}
