@@ -9,7 +9,7 @@ const Home = () => {
     <Carousel.Item>
       <img
         class="h-96 w-full p-3 object-cover shadow-sky-400 rounded-lg opacity-80"
-        src="https://img.freepik.com/free-photo/fresh-gourmet-meal-beef-taco-salad-plate-generated-by-ai_188544-13382.jpg?w=1380&t=st=1704486684~exp=1704487284~hmac=bc1e436c0859c32757ce71eb117937c3c9433b249fc3d7333936f4ab37dd5226"
+        src="assets\slide-1.avif"
         alt="First slide"
       />
       <Carousel.Caption></Carousel.Caption>
@@ -17,7 +17,7 @@ const Home = () => {
     <Carousel.Item>
       <img
         class="h-96 w-full object-cover p-3 shadow-2xl rounded-lg opacity-70"
-        src="https://www.modular.it/Modular/image-thumb__18135__home-carousel/Home%20Slider_4.jpg"
+        src="assets\slide-2.jpg"
         alt="Second slide"
       />
       <Carousel.Caption></Carousel.Caption>
@@ -25,7 +25,7 @@ const Home = () => {
     <Carousel.Item>
       <img
         class="h-96 w-full p-3 object-cover shadow-2xl rounded-lg opacity-80"
-        src="https://www.seasonssurrey.co.uk/images/kitchen-carousel-3.jpg"
+        src="assets\slide-3.jpg"
         alt="Third slide"
       />
     </Carousel.Item>
