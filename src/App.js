@@ -6,6 +6,7 @@ import DetailsPage from "./components/Maincontent/DetailsPage";
 import Mainpage from "./components/Maincontent/Mainpage";
 import Home from "./components/Maincontent/Home";
 
+
 function App() {
   return (
     <Router>

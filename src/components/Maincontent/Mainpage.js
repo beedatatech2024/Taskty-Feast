@@ -35,10 +35,10 @@ const Mainpage = () => {
         <Shimmer/>
       ) : (
         data.length > 0 ? (
-          <div className='flex flex-wrap text-center cursor-pointer'>
+          <div className='flex flex-wrap cursor-pointer'>
             {data.map(({ recipe }, index) => (
               <Link to={`/details/${recipe.label}`} state={{ item: { recipe } }} key={index}>
-                <div className='p-3 h-[9] w-72'>
+                <div className='p-3 h-[9] w-64'>
                   <img src={recipe.image} alt="not found" className="shadow-lg rounded-lg border bg-gray-50"/>
                   <h1 className='font-bold text-lg'>{recipe.label}</h1>
                 </div>

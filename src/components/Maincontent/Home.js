@@ -1,15 +1,16 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
+import ChatBot from 'react-simple-chatbot';
 
 const Home = () => {
   return (
     <>
-      <div class="rounded-lg overflow-hidden">
+      <div classname="rounded-lg overflow-hidden">
   <Carousel data-bs-theme="none">
     <Carousel.Item>
       <img
-        class="h-96 w-full p-3 object-cover shadow-sky-400 rounded-lg opacity-80"
-        src="assets\slide-1.avif"
+        class="h-96 w-full p-3 object-cover shadow-sky-400 rounded-lg opacity-100"
+        src="https://mdbootstrap.com/img/Photos/Slides/img%20(46).webp"
         alt="First slide"
       />
       <Carousel.Caption></Carousel.Caption>
@@ -148,7 +149,6 @@ const Home = () => {
       <h1 className="text-3xl font-bold text-center mb-6">About Us</h1>
       <div
         className="d-flex flex-row shadow-lg rounded-lg m-2 justify-center bg-blue-300"
-        // style={{ backgroundColor: " #cc99ff", justifyContent: "center" }}
       >
         <div className="m-2 rounded-sm">
           <img
@@ -185,6 +185,17 @@ const Home = () => {
             up-to-date information on the foods you consume.
           </p>
         </div>
+      </div>
+      <div>
+        <ChatBot
+          steps={[
+            {
+              id: '1',
+              message: 'Welcome to Tasty Feast 😊',
+            },
+          ]}
+          floating={true}
+        />
       </div>
     </>
   );
