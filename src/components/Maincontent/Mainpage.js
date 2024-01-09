@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Search from './Search';
 import { Link } from 'react-router-dom';
 import Shimmer from './Shimmer';
+
 const Mainpage = () => {
   const [data, setData] = useState([]);
   const [searchTerm, setSearchItem] = useState("biryani");

@@ -1,8 +1,15 @@
-import React from "react";
+import React,{useEffect,useState} from "react";
 import Carousel from "react-bootstrap/Carousel";
-import ChatBot from 'react-simple-chatbot';
-
+import Chat from "./Chat";
 const Home = () => {
+  const [showChatbot, setShowChatbot] = useState(false);
+  
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowChatbot(true);
+    }, 3000);
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <>
       <div classname="rounded-lg overflow-hidden">
@@ -185,17 +192,12 @@ const Home = () => {
             up-to-date information on the foods you consume.
           </p>
         </div>
-      </div>
-      <div>
-        <ChatBot
-          steps={[
-            {
-              id: '1',
-              message: 'Welcome to Tasty Feast 😊',
-            },
-          ]}
-          floating={true}
-        />
+     
+        {showChatbot && (
+        <div>
+          <Chat/>
+        </div>
+      )}
       </div>
     </>
   );
