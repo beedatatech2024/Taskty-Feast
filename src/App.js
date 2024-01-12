@@ -10,7 +10,6 @@ import Home from "./components/Maincontent/Home";
 function App() {
   return (
     <Router>
-      <div className="w-full">
         <Header />
         <Routes>
           <Route path="/" element={<Home/>} />
@@ -18,7 +17,6 @@ function App() {
           <Route path="/details/:label" element={<DetailsPage />} />
         </Routes>
         <Footer />
-      </div>
     </Router>
   );
 }

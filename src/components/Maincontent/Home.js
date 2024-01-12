@@ -12,11 +12,11 @@ const Home = () => {
   }, []);
   return (
     <>
-      <div classname="rounded-lg overflow-hidden">
+  <div className="rounded-lg overflow-hidden">
   <Carousel data-bs-theme="none">
     <Carousel.Item>
       <img
-        class="h-96 w-full p-3 object-cover shadow-sky-400 rounded-lg opacity-100"
+        className="h-96 w-full p-3 object-cover shadow-sky-400 rounded-lg opacity-100"
         src="https://mdbootstrap.com/img/Photos/Slides/img%20(46).webp"
         alt="First slide"
       />
@@ -24,7 +24,7 @@ const Home = () => {
     </Carousel.Item>
     <Carousel.Item>
       <img
-        class="h-96 w-full object-cover p-3 shadow-2xl rounded-lg opacity-70"
+        className="h-96 w-full object-cover p-3 shadow-2xl rounded-lg opacity-70"
         src="assets\slide-2.jpg"
         alt="Second slide"
       />
@@ -32,7 +32,7 @@ const Home = () => {
     </Carousel.Item>
     <Carousel.Item>
       <img
-        class="h-96 w-full p-3 object-cover shadow-2xl rounded-lg opacity-80"
+        className="h-96 w-full p-3 object-cover shadow-2xl rounded-lg opacity-80"
         src="assets\slide-3.jpg"
         alt="Third slide"
       />
