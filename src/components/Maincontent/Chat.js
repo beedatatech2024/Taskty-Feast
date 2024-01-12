@@ -7,21 +7,28 @@ import { ThemeProvider } from 'styled-components';
 const Chat = () => {
   const steps = [
     {
-        id: '0',
-        message: 'Welcome to Tasty Feast.😋!',
-        trigger: '1',
-    }, {
-        id: '1',
-        message: 'How can I help you?',
-        trigger: '2'
-    }, {
-        id: '2',
-        message:"To go Search",
-        trigger: '3',
-    }, {
-        id: '3',
-        message: " Thank you for Using Tasty Feast..",
-        end: true
+      id: '1',
+      message: 'Welcome to Tassty Feast😋',
+      trigger: '2',
+    },
+    {
+      id:'2',
+      message:"How can I help you?",
+      trigger:"input",
+    },
+    {
+      id: 'input',
+      user: true,
+      trigger: '3',
+    },
+    {
+      id: '3',
+      message: 'Go to Search',
+      trigger:"4"
+    }, 
+    {
+      id: '4',
+      message: 'Thank you.',
     }, 
   ];
   
